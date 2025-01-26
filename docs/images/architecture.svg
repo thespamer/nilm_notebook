@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- System Architecture Diagram -->
+    <style>
+        .title { font: bold 14px sans-serif; }
+        .label { font: 12px sans-serif; }
+        .component { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+        .arrow { stroke: #424242; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    
+    <!-- Arrow marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+        </marker>
+    </defs>
+    
+    <!-- Title -->
+    <text x="350" y="30" text-anchor="middle" class="title">NILM Power Monitor Architecture</text>
+    
+    <!-- Components -->
+    <rect x="50" y="100" width="120" height="60" rx="5" class="component"/>
+    <text x="110" y="135" text-anchor="middle" class="label">Current Sensor</text>
+    
+    <rect x="250" y="100" width="120" height="60" rx="5" class="component"/>
+    <text x="310" y="135" text-anchor="middle" class="label">Arduino</text>
+    
+    <rect x="450" y="100" width="120" height="60" rx="5" class="component"/>
+    <text x="510" y="135" text-anchor="middle" class="label">Node.js Server</text>
+    
+    <rect x="650" y="100" width="120" height="60" rx="5" class="component"/>
+    <text x="710" y="135" text-anchor="middle" class="label">Web Interface</text>
+    
+    <!-- Data Flow -->
+    <line x1="170" y1="130" x2="250" y2="130" class="arrow"/>
+    <line x1="370" y1="130" x2="450" y2="130" class="arrow"/>
+    <line x1="570" y1="130" x2="650" y2="130" class="arrow"/>
+    
+    <!-- Features -->
+    <rect x="450" y="200" width="120" height="150" rx="5" class="component"/>
+    <text x="510" y="225" text-anchor="middle" class="label">Features</text>
+    <text x="510" y="250" text-anchor="middle" class="label" font-size="10">Real-time Monitoring</text>
+    <text x="510" y="270" text-anchor="middle" class="label" font-size="10">NILM Analysis</text>
+    <text x="510" y="290" text-anchor="middle" class="label" font-size="10">Power Statistics</text>
+    <text x="510" y="310" text-anchor="middle" class="label" font-size="10">Device State Detection</text>
+    <text x="510" y="330" text-anchor="middle" class="label" font-size="10">Google Authentication</text>
+</svg>

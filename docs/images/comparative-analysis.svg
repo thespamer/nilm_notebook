@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 14px sans-serif; }
+        .label { font: 12px sans-serif; }
+        .axis { font: 10px sans-serif; }
+        .bar-your { fill: #4bc0c0; }
+        .bar-avg { fill: #36a2eb; }
+        .bar-efficient { fill: #4bc04b; }
+        .bar-inefficient { fill: #ff6384; }
+        .grid-line { stroke: #e0e0e0; stroke-width: 1; }
+    </style>
+
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">Power Consumption Comparison</text>
+
+    <!-- Chart Area -->
+    <rect x="50" y="50" width="700" height="300" fill="white" stroke="#ccc"/>
+
+    <!-- Grid Lines -->
+    <g class="grid">
+        <line x1="50" y1="100" x2="750" y2="100" class="grid-line"/>
+        <line x1="50" y1="150" x2="750" y2="150" class="grid-line"/>
+        <line x1="50" y1="200" x2="750" y2="200" class="grid-line"/>
+        <line x1="50" y1="250" x2="750" y2="250" class="grid-line"/>
+        <line x1="50" y1="300" x2="750" y2="300" class="grid-line"/>
+    </g>
+
+    <!-- Bars -->
+    <g transform="translate(100, 0)">
+        <!-- Your Notebook -->
+        <rect x="50" y="150" width="100" height="200" class="bar-your"/>
+        <text x="100" y="370" text-anchor="middle" class="label">Your Notebook</text>
+        <text x="100" y="140" text-anchor="middle" class="label">45.2W</text>
+
+        <!-- Average -->
+        <rect x="200" y="130" width="100" height="220" class="bar-avg"/>
+        <text x="250" y="370" text-anchor="middle" class="label">Similar Models</text>
+        <text x="250" y="120" text-anchor="middle" class="label">48.0W</text>
+
+        <!-- Efficient -->
+        <rect x="350" y="200" width="100" height="150" class="bar-efficient"/>
+        <text x="400" y="370" text-anchor="middle" class="label">Most Efficient</text>
+        <text x="400" y="190" text-anchor="middle" class="label">35.0W</text>
+
+        <!-- Inefficient -->
+        <rect x="500" y="50" width="100" height="300" class="bar-inefficient"/>
+        <text x="550" y="370" text-anchor="middle" class="label">Least Efficient</text>
+        <text x="550" y="40" text-anchor="middle" class="label">65.0W</text>
+    </g>
+
+    <!-- Axes Labels -->
+    <g class="axis">
+        <!-- Y-axis -->
+        <text x="45" y="50" text-anchor="end">70W</text>
+        <text x="45" y="100" text-anchor="end">60W</text>
+        <text x="45" y="150" text-anchor="end">50W</text>
+        <text x="45" y="200" text-anchor="end">40W</text>
+        <text x="45" y="250" text-anchor="end">30W</text>
+        <text x="45" y="300" text-anchor="end">20W</text>
+        <text x="45" y="350" text-anchor="end">10W</text>
+    </g>
+
+    <!-- Legend -->
+    <g transform="translate(600, 80)">
+        <rect x="0" y="0" width="140" height="100" fill="white" stroke="#ccc"/>
+        <rect x="10" y="10" width="20" height="10" class="bar-your"/>
+        <text x="40" y="20" class="label">Your Notebook</text>
+        <rect x="10" y="30" width="20" height="10" class="bar-avg"/>
+        <text x="40" y="40" class="label">Similar Models</text>
+        <rect x="10" y="50" width="20" height="10" class="bar-efficient"/>
+        <text x="40" y="60" class="label">Most Efficient</text>
+        <rect x="10" y="70" width="20" height="10" class="bar-inefficient"/>
+        <text x="40" y="80" class="label">Least Efficient</text>
+    </g>
+</svg>
