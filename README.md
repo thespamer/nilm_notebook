@@ -89,12 +89,12 @@ npm start
 ### Real-time Monitoring
 The system provides real-time power consumption monitoring with interactive charts:
 
-![Real-time Monitoring](docs/images/realtime-monitor.png)
+![Real-time Monitoring](docs/images/realtime-monitor.svg)
 
 ### Comparative Analysis
 Compare your notebook's power consumption with other models:
 
-![Comparative Analysis](docs/images/comparative-analysis.png)
+![Comparative Analysis](docs/images/comparative-analysis.svg)
 
 ### Device State Detection
 The system automatically detects and displays your notebook's current state:
